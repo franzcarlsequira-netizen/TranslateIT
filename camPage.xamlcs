@@ -1,0 +1,14 @@
+namespace YourApp;
+
+public partial class CamPage : ContentPage
+{
+    public CamPage()
+    {
+        InitializeComponent();
+    }
+
+    private async void OnScanClicked(object sender, EventArgs e)
+    {
+        await DisplayAlert("Camera", "Scanning text from camera...", "OK");
+    }
+}
