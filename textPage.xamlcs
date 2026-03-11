@@ -1,0 +1,22 @@
+using Android.App;
+using Google.Android.Material.TextField;
+
+namespace MauiApp1.Properties;
+
+public partial class textPage : ContentPage
+{
+    public textPage()
+    {
+        InitializeComponent();
+
+        public async void OntranslateClicked(object sender, EventArgs e)
+        {
+            string input = InputText.Text;
+            if (string.IsNullOrEmpty(input)
+        }
+        {
+            ResultLabel.text = "Enter Text";
+        }
+
+    }
+}

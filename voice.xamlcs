@@ -1,0 +1,17 @@
+﻿namespace YourApp;
+
+public partial class LanguagePage : ContentPage
+{
+    public LanguagePage()
+    {
+        InitializeComponent();
+    }
+
+    private async void OnSpeakClicked(object sender, EventArgs e)
+    {
+        DetectedLabel.Text = "Language detected: English";
+        ResultLabel.Text ="translated";
+
+        await DisplayAlert("Voice", "Voice recognition started", "OK");
+    }
+}
