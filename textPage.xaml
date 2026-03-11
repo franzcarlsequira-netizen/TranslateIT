@@ -1,0 +1,25 @@
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="YourApp.textPage"
+    Title="Text Translate">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <Label Text="Text Translator"
+               FontSize="22"
+               HorizontalOptions="Center" />
+
+        <Editor Placeholder="Enter text here..."
+                HeightRequest="120" />
+
+        <Button Text="Translate"
+                HeightRequest="50" />
+
+        <Frame Padding="15" BorderColor="Gray">
+            <Label Text="Translated result will appear here" />
+        </Frame>
+
+    </VerticalStackLayout>
+
+</ContentPage>
